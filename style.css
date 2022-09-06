@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30deg, 38%, 92%);
+
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  margin: 20 20 0 20px;
+  padding: 5rem;
+  flex-direction: column;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 300px));
+  width: fit-content;
+  height: fit-content;
+ 
+
+
+}
+.card-container .img-section {
+  max-width: 100%;
+ 
+}
+
+.card-container .img-section .perfume-img-desktop {
+  max-width: 100%;
+  min-height: 100%;
+  border-top-left-radius: 0.6em;
+  border-bottom-left-radius: 0.6em;
+}
+.card-container .info-section {
+  max-width: 100%;
+  padding: 2rem;
+  background-color: hsl(0deg, 0%, 100%);
+  border-top-right-radius: 0.6em;
+  border-bottom-right-radius: 0.6em;
+  color: hsl(228deg, 12%, 48%);
+
+}
+.description{
+  text-align: justify;
+  
+}
+.subtitle{
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 10px;
+ 
+}
+.tittle{
+  
+  font-size: 2.5rem;
+  margin-top: 1.3rem;
+  margin-bottom: 2rem;
+  line-height: 1;
+  font-family: "Fraunces", serif;
+  color: rgba(17, 16, 16, 0.849);
+ 
+  text-align: left;
+}
+.price{
+
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.new-price{
+  font-size: 2.2rem;
+  color: rgb(85, 165, 138);
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  
+
+}
+.old-price {
+  text-decoration: line-through;
+  font-size: 1rem;
+  margin-left: 2rem;
+  font-size: medium ;
+}
+.card-container{
+  box-shadow: 10px 10px 20px lightblue;
+  
+}
+.attribution{
+ margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.add-card-btn{
+  background-color: hsl(158deg, 36%, 37%);
+  padding: 0.5rem 3rem;
+  color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  text-decoration: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.add-to-card-btn{
+  background-color: hsl(158deg, 36%, 37%);
+  padding: 1rem 3rem;
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-weight: 700;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.add-to-card-btn:hover{
+  background-color: rgb(31, 85, 63);
+}
+
+.addtocart{
+ 
+  margin-left: 10px;
+}
+.perfume-img-mobile {
+  display: none;
+
+}
+
+  
+
+/* @media (max-width: 767px) {
+  .card-container {
+    grid-template-columns: minmax(370px, 200px);
+    display: grid;
+    
+  }
+  .perfume-img-mobile{
+    display: flex;
+        max-width: 100%;
+        height: 0.1rem fit-content;
+        border-top-left-radius: 0.6em;
+        border-top-right-radius: 0.6em ;
+        padding: 5px;
+  }
+  .info-section {
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 0.6em;
+ 
+  }
+    .title {
+      font-size: 2.5rem;
+    }
+
+} */
+@media (max-width: 767px) {
+  .card-container {
+    grid-template-columns: minmax(300px, 800px);
+    margin-top: 10rem;
+   width: auto;
+  }
+
+    
+      .perfume-img-desktop {
+        display: none;
+      }
+
+      .perfume-img-mobile {
+        display: block;
+        max-width: 100%;
+        min-height: 100%;
+        border-top-left-radius: 0.6em;
+        border-top-right-radius: 0.6em;
+      
+      }
+         .info-section {
+      border-top-right-radius: unset;
+      border-bottom-left-radius: 0.6em;
+      height:fit-content ;
+     
+    }
+
+      
+        .title {
+          font-size: 2.5rem;
+        }
+      
+    }
+
+ 
+  
+
+
+  
